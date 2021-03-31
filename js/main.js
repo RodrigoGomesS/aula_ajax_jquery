@@ -17,6 +17,12 @@ function consultaCep() {
             //document.getElementById("localidade").innerHTML = response.localidade;
             $("#uf").html(response.uf);
             //document.getElementById("uf").innerHTML = response.uf;
+            $("#titulo_cep").html("CEP " + response.cep);
+            $(".cep").show();
         }
     })
 }
+
+$(function(){
+    $(".cep").hide();
+});
